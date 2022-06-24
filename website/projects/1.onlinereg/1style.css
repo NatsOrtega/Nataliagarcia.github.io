@@ -1,0 +1,120 @@
+/* https://es.stackoverflow.com/questions/48805/como-crear-un-bot%C3%B3n-html-que-funcione-como-un-link */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    text-align: center;
+    background-color: #2B2D42;
+}
+
+a{
+    text-decoration: none;
+}
+
+.lang-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.lang-menu ul li{
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: #3498db;
+}
+
+.lang-menu ul li a{
+    text-decoration: none;
+    color: #3498db;
+}
+
+.lang-menu ul li:hover{
+    background-color: rgba(44, 7, 53, 0.5);
+    border-radius: 3px;
+}
+
+.select-lang{
+    display: none;
+    border-radius: 3px;
+}
+
+.lang-menu ul li:hover .select-lang{
+    display: block;
+    position: absolute;
+    background-color: #2B2D42;
+}
+
+/* despliegue en lista */
+.lang-menu ul li:hover .select-lang ul{ 
+    display: block;
+    margin: 10px;
+}
+
+.lang-menu ul li:hover .select-lang ul li{
+    width: 150px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+input{
+    border-radius: 4px;
+}
+
+.register{
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    background-color: #2a9d8f;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #264653;
+    display: grid;
+}
+
+.register h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register .fa-solid{
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 80px;
+}
+
+button{
+    max-width: 50%;
+    margin: 10px 90px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #E76F51;
+}
+
+.checkbox-terms{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.checkbox-terms input{
+    margin: 6px;
+    padding: 0;
+    border: 0;
+}

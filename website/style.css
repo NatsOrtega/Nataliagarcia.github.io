@@ -1,0 +1,284 @@
+/* https://coolors.co/palette/2b2d42-4e2c70-702b9e-b429f9-9c43f8-855df7-6d77f6-5591f5-3eabf4-26c5f3
+https://coolors.co/palette/97dffc-858ae3-613dc1-4e148c-2c0735 */
+*{
+    font-family: 'Shadows Into Light', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-family: 'Quicksand', sans-serif;*/
+    /* font-family: 'Kaushan Script', cursive; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    text-align: center;
+    background-color: #2B2D42;
+}
+
+a{
+    text-decoration: none;
+}
+
+.lang-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.lang-menu ul li{
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: #3498db;
+}
+
+.lang-menu ul li a{
+    text-decoration: none;
+    color: #3498db;
+}
+
+.lang-menu ul li:hover{
+    background-color: rgba(44, 7, 53, 0.5);
+    border-radius: 3px;
+}
+
+.select-lang{
+    display: none;
+    border-radius: 3px;
+}
+
+.lang-menu ul li:hover .select-lang{
+    display: block;
+    position: absolute;
+    background-color: #2B2D42;
+}
+
+/* despliegue en lista */
+.lang-menu ul li:hover .select-lang ul{ 
+    display: block;
+    margin: 10px;
+}
+
+.lang-menu ul li:hover .select-lang ul li{
+    width: 150px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.home{
+    display: grid;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#d7bde2), url("IMG_0545.jpg");
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    box-sizing: border-box;
+}
+
+.home-icon i{
+    font-size: x-large;
+    padding-top: 10px;
+    bottom: 10px;
+}
+
+.name{
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    padding: 20px 10px;
+    padding-top: 70px;
+    margin: 20px; 
+    border: 0;
+    display: absolute;
+}
+
+.name h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(215, 189, 226, 0.8);
+}
+
+.name p{
+    padding-top: 12%;
+}
+.contact, .aboutme{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    margin: 20px 10px; 
+    border: 0;
+    justify-content: center;
+}
+
+.anim-link img:hover{
+    padding: 2px;
+    background-color: rgba(215, 189, 226, 0.5);
+    border-radius: 3px;
+}
+
+.aboutme p{
+    padding: 20px 120px;
+    text-align: justify;
+    color: #2C0735;
+}
+
+.aboutme h2{
+    color: #2C0735;
+}
+
+@media screen and (max-width: 750px){
+    *{
+        font-size: small;
+    }
+
+    .select-lang{
+        display: none;
+        border-radius: 3px;
+        transform: translate(-50%);
+    }
+
+    .lang-menu ul li{
+        width: 100%;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+        color: #3498db;
+    }
+
+    .lang-menu ul li:hover .select-lang ul li{
+        width: max-content;
+        border-radius: 3px;
+        text-align: left;
+    }
+
+    .aboutme p{
+        padding: 20px 50px;
+        text-align: justify;
+        color: #2C0735;
+    }
+}
+
+.skills, .projects{
+    padding: 20px 120px;
+    color: #2C0735;
+}
+
+.skills, .projects h2{
+    text-align: center;
+}
+
+.skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-data-card{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    margin: 20px;
+}
+
+.skill-data-card .skill-data{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skill-data-card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #97DFFC;
+    background-color: rgba(52, 152, 219,0.7);
+}
+
+.skill-data-card .front h3{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.skill-data-card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #2B2D42;
+    padding: 15px;
+    color: #3498db;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #2C0735;
+}
+
+.skill-data-card .back ul{
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.skill-data-card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.skill-data-card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.projects{
+    width: 100%;
+    display: grid;
+}
+
+.projects a{
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    background: rgb(44, 7, 53);
+    border-radius: 3px;
+}
+
+.projects a:hover{
+    color: #3498db;
+}
+
+.projects-list{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: none;
+    margin: 10px;
+    justify-content: left;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.projects-list .projlist-item{
+    min-width: 160px;
+    line-height: 2.5;
+    text-align: center;
+    margin-right: 2px;
+    padding: 16px 4px;
+}
+
+.arrow-up i{
+    width: 100%;
+    font-size: x-large;
+    padding: 20px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 1;
+    left: 95%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+    <link rel="stylesheet" href="1style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="nav-bar">
+        <div class="lang-menu">
+            <ul>
+                <li><img src="/icons/Nats memoji.png" alt="natalia-icon" width="20px" height="30px"><a href="#">NG</a></li>
+                <li><a href="/index.html#aboutme">About</a></li>
+                <li><a href="/index.html#skills">Skills</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="#"></a><i class="fa-solid fa-language"></i></a>
+                    <div class="select-lang">
+                        <ul>
+                            <li><a href="/index.html">English</a></li>
+                            <li><a href="/index_es.html">Español</a></li>
+                            <li><a href="/index_pt.html">Portugués Brasileiro</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <form class="register">
+        <i class="fa-solid fa-user"></i>
+        <h1>Sign Up</h1>
+        <label for="name">NAME</label>
+        <input name="name" id="name" type="text" placeholder="Write your first name">
+
+        <label for="surname">SURNAME</label>
+        <input name="surname" id="surname" type="text" placeholder="Write your surname">
+
+        <label for="email">EMAIL</label>
+        <input name="email" id="email" type="email" placeholder="me@example.com">
+
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="password">
+
+        <button type="submit">Join Now</button>
+
+        <div class="checkbox-terms">
+            <label for="checkbox"></label>
+            <input type="checkbox" name="simplecheckbox" id="checkbox">
+            <p>I agree to the <a href="#">Terms & Conditions</a></p>
+            <!-- <p>I agree to the <a href="#">Terms & Conditions</a></p> -->
+        </div>
+    </form>
+</body>
+</html>

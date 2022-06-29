@@ -68,38 +68,63 @@ a{
 
 /* HEADER */
 header{
-    background-color: #666;
+    background-color: black;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: whitesmoke;
+    color: #fdd935;
 }
 
-/* CONTAINER */
-section{
-    display: flex;
-}
-
-.nav-section{
-    flex: 1;
-    background-color: #ccc;
+.section-nav{
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-image: url("/projects/4.Webstyleguide2/4images/paris.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: center;
     padding: 20px;
 }
 
-.nav-section ul{
-    list-style: none;
+.section-nav ul{
+    list-style-type: none;
     padding: 0;
+    text-decoration: none;
+}
+
+.section-nav a{
+    color: black;
+    font-weight: bolder;
+}
+
+.section-nav a:hover{
+    color: white;
 }
 
 article{
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+    background-color: #fdd935;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer{
-    background-color: #777;
+    background-color: black;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: #fdd935;
+}
+
+@media (max-width: 600px) {
+    .section-nav, article{
+        width: 100%;
+        height: auto;
+    }
 }

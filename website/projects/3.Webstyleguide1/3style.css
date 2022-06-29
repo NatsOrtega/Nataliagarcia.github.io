@@ -68,50 +68,43 @@ a{
 
 /* HEADER */
 header{
-    background-color: #666;
+    background-color: #8d8741;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: #fbeec1;
 }
 
-.section-nav{
-    float: left;
-    width: 30%;
-    height: 300px;
-    background-color: #ccc;
+/* CONTAINER */
+section{
+    display: flex;
+}
+
+.nav-section{
+    flex: 1;
+    background-color: #659dbd;
     padding: 20px;
 }
 
-.section-nav ul{
-    list-style-type: none;
+.nav-section ul{
+    list-style: none;
     padding: 0;
+    text-decoration: none;
 }
 
 article{
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #3498db;
-    height: 300px;
-}
-
-section::after{
-    content: "";
-    display: table;
-    clear: both;
+    flex: 3;
+    background-image: linear-gradient(rgba(0,0,0,0.5),grey), url("/projects/3.Webstyleguide1/3images/london.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: #fbeec1;
+    position: center;
 }
 
 footer{
-    background-color: #777;
+    background-color: #daad86;
     padding: 10px;
     text-align: center;
-    color: white;
-}
-
-@media (max-width: 600px) {
-    .section-nav, article{
-        width: 100%;
-        height: auto;
-    }
+    color: #fbeec1;
 }
